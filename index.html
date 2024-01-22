@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hockeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#FF4240',
+                'h3-color': '#FFF',
+                'h2-color': '#131318',
+                'p-color': '#13131899',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-Manrope{
+            font-family: 'Manrope', sans-serif;
+
+         }
+    </style>
+</head>
+<body class=" font-Manrope ">
+    <header class="md:container md:mx-auto mx-4">
+        <nav class="my-14">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost lg:text-4xl font-extrabold">Hockeys</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#424247]">
+                    <li><a class="text-primary-color">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-primary-color text-white lg:text-xl font-bold">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <div class="relative ">
+            <div class="carousel ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="assist/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform left-1/2 lg:left-5 top-3/4 gap-4">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-none ">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="assist/4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform  left-1/2 lg:left-5 top-3/4 gap-4">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="assist/2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform  left-1/2 lg:left-5 top-3/4 gap-4">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                  </div>
+                </div> 
+            </div>
+            <div class=" lg:absolute bottom-14 right-14 bg-black p-8 space-y-4 max-w-lg rounded-2xl "  >
+                <h3 class=" text-h3-color lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class=" text-[#ffffff99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </div> 
+    </header>
+    <main class="md:container md:mx-auto mx-4">
+        <section class="my-8 lg:my-20 ">
+            <h3 class="text-4xl font-extrabold text-h2-color text-center mb-6">Professional Hockeys Club</h3>
+            <p class="text-p-color font-medium text-center max-w-xl m-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="space-y-4 text-center">
+                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <h2 class="text-h2-color text-xl font-semibold">Prayer Facility</h2>
+                    <p class="text-p-color font-normal  ">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h2 class="text-h2-color text-xl font-semibold">Prayer Facility</h2>
+                    <p class="text-p-color font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h2 class="text-h2-color text-xl font-semibold">Prayer Facility</h2>
+                    <p class="text-p-color font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="space-y-4 text-center">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h2 class="text-h2-color text-xl font-semibold">Prayer Facility</h2>
+                    <p class="text-p-color font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="my-8 lg:my-20 ">
+            <h3 class="text-4xl font-extrabold text-h2-color text-center mb-6">Program Sections</h3>
+            <p class="text-h2-color font-medium text-center max-w-xl m-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+            <div class="mt-20 grid grid-cols-1 lg:grid-cols-2  gap-8">
+                <div>
+                    <div class="hero rounded-2xl" style="background-image: url(assist/2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="  ">
+                          <div class=" p-10 pt-36 space-y-4">
+                            <h3 class=" text-h3-color text-3xl font-extrabold">Junior Program</h3>
+                            <p class="text-h3-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="btn bg-primary-color text-white border-none">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="">
+                    <div class="hero rounded-2xl " style="background-image: url(assist/2.png);">
+                        <div class="hero-overlay bg-opacity-60 "></div>
+                        <div class="  ">
+                          <div class=" p-10 pt-36 space-y-4">
+                            <h3 class=" text-h3-color text-3xl font-extrabold">Teenager Program</h3>
+                            <p class="text-h3-color">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="btn bg-primary-color text-white border-none">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
